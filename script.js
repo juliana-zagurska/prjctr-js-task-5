@@ -31,15 +31,9 @@ function processProductPrices(productPrices) {
     const processedPrices = {};
 
     for (const key in productPrices) {
-<<<<<<< HEAD
         if (productPrices.hasOwnProperty(key)) {
             const lowerCaseKey = key.toLowerCase();
-            const roundedPrice = productPrices[key].toFixed(2);
-=======
-        if (Object.hasOwnProperty.call(productPrices, key)) {
-            const lowerCaseKey = key.toLowerCase();
-            const roundedPrice = Math.round(productPrices[key] * 100) / 100; // Заокруглення до двох знаків після коми
->>>>>>> 46f46d9d118d1142a17101e30d482e6b8cee6912
+            const roundedPrice = productPrices[key].toFixed(2); 
             processedPrices[lowerCaseKey] = roundedPrice;
         }
     }
@@ -50,17 +44,9 @@ function processProductPrices(productPrices) {
 const originalPrices = {
     'Product1': 12.3456,
     'Product2': 45.6789,
-<<<<<<< HEAD
     'Product3': 78.1234,
     'Product4': 78
-=======
-    'Product3': 78.1234
->>>>>>> 46f46d9d118d1142a17101e30d482e6b8cee6912
 };
 
 const processedPrices = processProductPrices(originalPrices);
 console.log(processedPrices);
-<<<<<<< HEAD
-
-=======
->>>>>>> 46f46d9d118d1142a17101e30d482e6b8cee6912
